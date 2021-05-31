@@ -1,0 +1,7 @@
+.breadcrumb_container {
+  .breadcrumb {background: transparent;
+    a {color: $color-brand;
+      &:hover {color: $color-text-secondary}
+    }
+  }
+}

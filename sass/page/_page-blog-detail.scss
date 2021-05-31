@@ -1,0 +1,20 @@
+#page_blog_detail {}
+.page_content {margin: 0 0 30px}
+.detail_header {margin-bottom: .5rem;}
+.detail_title {font-weight: 800;line-height: 1.2;margin: 0;font-size: 36px}
+.detail_meta {}
+.detail_body {}
+.detail_article {}
+
+.detail_widget {max-width: 450px;margin: 48px auto;padding: 10px 15px;background: #d0f6c8;color: #0a1e05;border-radius: 4px;border: 1px solid #2fa63a;
+	ol {
+		li {
+			a {
+				color: #247e2c;
+				display: block;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+.detail_widget__title {    text-align: center;}

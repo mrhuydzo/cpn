@@ -1,0 +1,81 @@
+//Color
+$color-gray: #8C8C8C;
+$color-gray-light: #D9D9D9;
+
+$color-dark: #262626;
+$color-light: #8C8C8C;
+
+$color-red: #F44336;
+$color-green: #7EC362;
+$color-purple: #3F51B5;
+$color-blue: #1890FF;
+
+$color-brand: #1aa94c;
+$color-brand-second: #00194F;
+
+$color-bg: #fff ;
+$color-bg-body: #FAFAFA ;
+$color-bg-secondary: #e7eeef;
+$color-bg-footer: #e7eeef;
+
+$color-text: #333;
+$color-text-secondary: #717171;
+$color-text-third: #8C8C8C;
+
+$color-disabled: #8C8C8C;
+$color-border: #e3e3e3;
+
+$transparent: transparent !default;
+$colors: () !default;
+$colors: map-merge((
+		"transparent":           $transparent,
+		"brand":           $color-brand,
+		"bg":           $color-bg,
+		"text":         $color-text,
+		"text-second":  $color-text-secondary,
+		"link":         $color-blue,
+		"blue":         $color-blue,
+		"red":          $color-red,
+		"gray":         $color-gray,
+		"gray-light":   $color-gray-light,
+		"green":        $color-green,
+
+		"danger":       $color-red,
+		"error":        $color-red,
+
+		"dark":         $color-dark,
+		"border":       $color-border,
+
+		"disabled":      $color-disabled,
+
+		"line-form":    $color-border,
+		"line-main":    $color-border,
+		"line-sub":     $color-border,
+
+		"prinmary":     $color-brand,
+		"warning":     $transparent,
+
+
+		"light":     $transparent,
+		"lighter":     $transparent,
+
+
+		"info":     $transparent,
+		"success":     $transparent,
+		"note":         $transparent,
+		"hint":         $transparent,
+
+), $colors);
+
+
+//Fonts-size
+//$font-size-base: 15px;
+$font-size-tiny: 12px;
+$font-size-xs: 14px;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-b: 24px;
+$font-size-bb: 32px;
+
+
+$fws-pro: 'Font Awesome 5 Pro'

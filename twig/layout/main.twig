@@ -1,0 +1,20 @@
+<main class="page_content">
+    <div class="content_wrap">
+        <h3 class="content_title">Most views</h3>
+        <div class="content_lst">
+            <div class="row">
+                {% for i in 0..9 %}
+                    <div class="col-md-6 content_lst__item">
+                        <a href="#" title="">Payment Options (ibanking/ATM/Credit card/Available Amount)</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="color_gray mb20">
+            If the answer does not help, you may contact us using the methods below.
+            For quicker assistance, please contact our Live Chat for pre-sales/order issue, and Submit a Ticket for after-sales issue.
+        </div>
+
+        {% include '../components/group-button.twig' %}
+    </div>
+</main>

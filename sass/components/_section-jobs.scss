@@ -1,0 +1,17 @@
+.job_list_wrapper {}
+.job_item{margin-bottom: 20px}
+.job_item_card {height: 100%;border-radius: 4px;padding: 20px 16px;position: relative;border: 1px solid $color-border;}
+.job_item_logo {position: absolute;top: 20px;left: 16px;
+  img {width: 64px;}
+}
+.job_item_detail {padding: 0 0 0 70px}
+.job_item_title {font-weight: 800;font-size: 18px;margin-bottom: 5px;width: calc(100% - 70px)}
+.job_item_tags {margin-bottom: 5px;
+  .tag {background: #f5f6f7;border: 1px solid $color-border;color: #073d05;font-size: 11px;font-weight: 500;border-radius: .9em;padding: 2px 12px;white-space: nowrap;margin-right: 5px;}
+}
+.job_item_urgent {position: absolute;right: 16px;top: 20px;text-transform: uppercase;color: #f5f2f2;white-space: nowrap;font-size: .625em;padding: .3em .9em;background: #ff5a5f;text-shadow: 1px 1px #f30007;border-radius: 14px;text-decoration: none;}
+.job_item_salary {font-size: 12px;margin-bottom: 12px;}
+.job_item_reward {font-size: 18px;font-weight: 800;margin-bottom: 0;}
+.job_item_viewmore {display: inline-block;margin-top: 18px;color: $color-brand;white-space: nowrap;font-size: .9em;font-weight: 700;text-decoration: underline;}
+.job_item_loadmore {text-align: center;margin-top: 30px}
+.job_item_loadmore-btn {padding: 16px 40px;font-weight: 700}
