@@ -3,7 +3,7 @@
 }
 .footer_container {}
 .footer_menu__col {margin-bottom: 30px;}
-.footer_menu__title {font-weight: 800;margin-bottom: 20px;font-size: 15px}
+.footer_menu__title {font-weight: bold;margin-bottom: 20px;font-size: 15px}
 .footer_menu__row {margin-bottom: 10px;
   @include truncate(100%);
 }
