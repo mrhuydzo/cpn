@@ -1,0 +1,9 @@
+.news_lst {}
+.news_item {}
+.news_item__thumb {
+	@include aspect-ratio(266,170);
+	img {}
+}
+.news_item__title {}
+.news_item__des {}
+.news_item__more {}

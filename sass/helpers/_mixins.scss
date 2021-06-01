@@ -262,5 +262,20 @@
 
 @mixin scroll-bar-ff (){
   scrollbar-width: thin;          /* "auto" or "thin"  */
-  scrollbar-color: blue $color-gray-four $color-gray-third;   /* scroll thumb & track */
+  scrollbar-color: blue $color-border $color-text;   /* scroll thumb & track */
 }
+
+
+@mixin aspect-ratio($width, $height, $mode: contain) {
+  $padding: unquote( ( $height / $width ) * 100 + '%' );
+  display: block;
+  position: relative;
+  &::before {
+    content: '';
+    width: 100%;
+    padding-top: $padding;
+    display: block;
+  }
+  img {@include responsive-ratio-img($mode)}
+}
+
