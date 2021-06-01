@@ -6,7 +6,7 @@ function backToTop () {
 }
 
 function slideNews () {
-    var swiper = new Swiper(".news_slide .swiper-container", {
+    var swiper = new Swiper(".news_slide", {
         slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
