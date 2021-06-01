@@ -7,7 +7,7 @@ a {color: $color-text;text-decoration: none;-webkit-font-smoothing: antialiased;
 
 img {max-width: 100%}
 
-
+hr {border-top: solid 1px $color-border;border-bottom: none;margin: 10px 0;}
 
 //White space
 .white_space_nowarp {white-space: nowrap}

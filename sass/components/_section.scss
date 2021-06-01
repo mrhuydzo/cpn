@@ -1,9 +1,5 @@
 .section_common {padding: 50px 0;
-  @media (min-width: $bp-md) {
-    padding: 70px 0;
-  }
+
 }
 .section_header {margin-bottom: 30px}
 .section_title {color: #333;font-size: 30px;font-weight: bold;margin: 0}
-
-.section_line {border: none;border-bottom: 2px dashed #e3e3e3}

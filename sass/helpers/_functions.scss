@@ -177,6 +177,9 @@ $icon-values: (10,12,15,16,);
       border-color: nth($color-value,2) !important;
     }
   }
+  .hr_#{nth($color-value,1)} {
+    border-color: nth($color-value, 2) !important;;
+  }
 }
 
 
