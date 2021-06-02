@@ -143,18 +143,18 @@ $vertical-align-values: (-1,-2,-3,-4,-5,-10,0,1,2,3,4,5);
 }
 
 //Icon Size
-$icon-values: (10,12,15,16,);
-@each $icon-value in $icon-values {
-    .icon-size-{
-      &#{$icon-value}{
-        width: #{$icon-value}px !important;
-        height: #{$icon-value}px !important;
-        font-size: 0;
-        display: inline-block;
-        vertical-align: -2px;
-      }
-    }
-}
+//$icon-values: (10,12,15,16,);
+//@each $icon-value in $icon-values {
+//    .icon-size-{
+//      &#{$icon-value}{
+//        width: #{$icon-value}px !important;
+//        height: #{$icon-value}px !important;
+//        font-size: 0;
+//        display: inline-block;
+//        vertical-align: -2px;
+//      }
+//    }
+//}
 
 //Loop Color,Background Color
 @each $color-value in $colors {
@@ -184,7 +184,7 @@ $icon-values: (10,12,15,16,);
 
 
 // font size
-$font-size-values: (10,11,12,13,14,16,18,20,24);
+$font-size-values: (10,11,12,13,14,16,18,20,25);
 @each $font-size in $font-size-values {
   .fs-,
   .font-size-{

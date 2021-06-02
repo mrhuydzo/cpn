@@ -1,5 +1,5 @@
 function backToTop () {
-    $("a.back_to_top").click(function() {
+    $("a.back_to_top, .back_top_bar").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "fast");
         return false;
     });

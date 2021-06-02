@@ -2,8 +2,16 @@
 {% block pageTitle %} Siêu thị điện máy CPN Việt Nam {% endblock %}
 {% block page %}
     <div id="page_home" class="page_main">
+        {% include '../layout/topbar.twig' %}
+        {% include '../layout/header.twig' %}
         <div class="page_body">
             <div class="container">
+                {% include './../components/home/service-box.twig' %}
+                <div class="service_box">
+                    <div class="service_box__container">
+                        div.
+                    </div>
+                </div>
                 <div class="home_main">
                     {% include './../components/home/box-laptop.twig' %}
                     {% include './../components/home/box-computer.twig' %}

@@ -1,0 +1,22 @@
+{% set arr = [
+	{title: 'MIỄN PHÍ VẬN CHUYỂN',content: 'Với đơn Mua hàng Online > 1 triệu',icon: '../../images/icon1_48x'},
+	{title: 'THẺ THÀNH VIÊN',content: 'Đổi nhiều quà tặng hấp dẫn chỉ có tại CPN',icon: '../../images/icon2_48x'},
+	{title: 'Tích điểm đơn hàng',content: 'Ứng với giá trị đơn hàng, khách hàng được tích điểm đổi nhiều quà tặng hấp dẫn.',icon: '../../images/icon3_48x'},
+	{title: 'SUPPORT ONLINE',content: 'Dịch vụ Hỗ trợ, giải đáp chăm sóc khách hàng uy tín',icon: '../../images/icon4_48x'},
+] %}
+
+<div class="service_box">
+	<div class="service_box__container">
+		{% for i in arr %}
+		<div class="service_box__item">
+			<img src="{{ i.icon }}.png" alt="" />
+			<h3 class="service_box__title">
+				{{ i.title }}
+			</h3>
+			<p class="service_box__summary">
+				{{ i.content }}
+			</p>
+		</div>
+		{% endfor %}
+	</div>
+</div>
