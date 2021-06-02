@@ -1,10 +1,34 @@
-<div class="block_container block_news">
+<div class="block_container block_customer">
 	<div class="block_header">
 		<h3 class="block_title">Ý kiến khách hàng</h3>
+		<div class="block_header__control">
+			<a href="javascript:void(0)" rel="nofollow" class="prev">
+				<i class="far fa-chevron-left"></i>
+			</a>
+			<a href="javascript:void(0)" rel="nofollow" class="next">
+				<i class="far fa-chevron-right"></i>
+			</a>
+		</div>
 	</div>
 	<div class="block_body">
-		<div class="news_slide">
-
+		<div class="customer_lst">
+			<div class="swiper-container customer_slide">
+				<div class="swiper-wrapper">
+					{% for i in 0..2 %}
+						<div class="swiper-slide">
+							<div class="customer_item">
+								<div class="customer_item__avatar">
+									<img src="http://placehold.jp/100x100.png" alt=""/>
+								</div>
+								<p class="customer_item__des">
+									<i>“ Đến với CPN có nhiều chương trình mua hàng dành cho khách hàng làm chúng tôi thực sự vui và thoải mái khi mua hàng tại đây ”</i>
+								</p>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 	</div>
 </div>

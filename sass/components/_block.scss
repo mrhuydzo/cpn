@@ -1,7 +1,15 @@
 .block_container {}
-.block_header {}
+.block_header {border-bottom: solid 1px $color-border;margin: 0 0 15px;display: flex;align-items: center;justify-content: space-between}
+.block_header__control {text-align: right;display: flex;align-items: center;
+	a {display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border: solid 1px $color-border;border-radius: 50%;font-size: 11px;
+		+ a {margin: 0 0 0 5px}
+	}
+}
+.block_title {font-family: $font-title;font-size: $font-size-m;color: $color-text;display: inline-block;position: relative;padding: 0 0 15px;margin: 0;text-transform: uppercase;
+	&::after {content: '';background: $color-brand;display: block;height: 2px;width: 70px;position: absolute;bottom: -1px;left: 0}
+}
+
 .block_body {}
-.block_title {}
 
 
 //Block News

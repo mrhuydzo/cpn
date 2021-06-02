@@ -24,6 +24,7 @@
 
 @import "components/_back-to-top";
 @import "components/_block";
+@import "components/_block-customer";
 @import "components/_news-lst";
 
 // Layout related stylesheets
@@ -31,8 +32,9 @@
 @import "layout/_sidebar";
 @import "layout/_page-main";
 
-// Page-specific stylesheets
 
+// Page-specific stylesheets
+@import "page/_page-home";
 
 
 // Vendors and external stylesheets
