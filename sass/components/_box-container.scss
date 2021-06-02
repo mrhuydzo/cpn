@@ -1,0 +1,18 @@
+.box_container {min-height: 400px;margin: 0 0 20px}
+.box_header {display: flex;align-items: center;border-bottom: solid 2px $color-brand;}
+.box_title {background: $color-brand;color: white;font-size: 20px;margin: 0;font-family: $font-title;text-transform: uppercase;display: inline-block;position: relative;padding: 5px 30px 5px 10px;min-width: 280px;
+	border-radius: 0 20px 0 0;
+	i {margin: 0 10px 0 0;font-size: 24px}
+}
+.box_body {}
+
+.box_tab {margin-left: auto}
+.box_tab__item {display: inline-block;padding: 3px 15px;border: solid 1px $color-border;border-radius: 3px;text-transform: capitalize;
+	+ .box_tab__item {margin-left: 10px;}
+	&.active {border-color: $color-brand}
+}
+
+.box_brands {padding: 20px 0;border-bottom: solid 1px $color-border;margin: 0 0 20px;display: flex;}
+.box_brands__item {flex-grow: 1;padding: 0 12px;
+	+ .box_brands__item {}
+}

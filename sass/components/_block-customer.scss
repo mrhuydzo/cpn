@@ -1,7 +1,8 @@
 .block_customer {}
 .customer_lst {}
-.customer_item {border: solid 1px $color-border;padding: 15px;width: 100%}
+.customer_item {margin: 1px}
+.customer_item__inner {border: solid 1px $color-border;padding: 15px 25px;}
 .customer_item__avatar {width: 90px;height: 90px;margin: 0 auto 30px;border-radius: 50%;overflow: hidden;
 	img {object-fit: cover}
 }
-.customer_item__des {color: $color-text-secondary;text-align: center}
+.customer_item__des {color: $color-text-secondary;text-align: center;margin: 0 0 100px}

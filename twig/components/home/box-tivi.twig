@@ -1,0 +1,30 @@
+{% set arr = [
+    '../../images/brands/sony',
+    '../../images/brands/samsung',
+    '../../images/brands/lg',
+    '../../images/brands/sharp',
+    '../../images/brands/tcl',
+    '../../images/brands/skyworth',
+    '../../images/brands/asanzo',
+] %}
+<div class="box_container box_container__refrigerator">
+    <div class="box_header">
+        <h4 class="box_title">
+            <i class="far fa-tv"></i> TI VI - LOA - DÀN KARAOKE
+        </h4>
+        <div class="box_tab">
+            <a href="#" class="box_tab__item active">Tivi</a>
+            <a href="#" class="box_tab__item">Âm Thanh</a>
+            <a href="#" class="box_tab__item">Dàn Karaoke</a>
+        </div>
+    </div>
+    <div class="box_body">
+        <div class="box_brands">
+            {% for i in arr %}
+            <a href="#" class="box_brands__item">
+                <img src="{{ i }}.png" alt="" />
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

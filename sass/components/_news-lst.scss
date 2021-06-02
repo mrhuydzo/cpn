@@ -1,11 +1,13 @@
-.news_lst {}
+.news_lst {width: 100%}
 .news_item {}
 .news_item__thumb {margin: 0 0 10px;
 	@include aspect-ratio(266,170);
 	img {}
 }
 .news_item__title {font-size: $font-size-sm;color: $color-text-secondary;margin: 0 0 10px}
-.news_item__des {margin: 0 0 10px}
+.news_item__des {margin: 0 0 20px;
+	@include line-number(4);
+}
 .news_item__more {
 	a {font-weight: $font-weight-bold}
 }

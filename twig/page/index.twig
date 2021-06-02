@@ -3,10 +3,18 @@
 {% block page %}
     <div id="page_home" class="page_main">
         <div class="page_body">
-            <h1></h1>
+            <div class="container">
+                <div class="home_main">
+                    {% include './../components/home/box-tivi.twig' %}
+                    {% include './../components/home/box-refrigerator.twig' %}
+                </div>
+            </div>
         </div>
 
         <div class="home_bottom">
+            <div class="back_top_bar">
+                <i class="fal fa-arrow-up"></i><strong>BACK TO TOP</strong><i class="fal fa-arrow-up"></i>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-8">
