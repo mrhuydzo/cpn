@@ -1,5 +1,5 @@
 .product_lst {}
-.product_item {border: solid 1px $color-border;padding: 10px;position: relative}
+.product_item {background: white;border: solid 1px $color-border;padding: 10px;position: relative}
 .product_item__thumb {
 	@include aspect-ratio(1,1);
 }

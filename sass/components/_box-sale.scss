@@ -1,0 +1,14 @@
+.box_sale {}
+.box_sale__header {background: white;display: flex;align-items: center;padding: 15px 20px 3px 20px;border-radius: 10px 10px 0 0}
+.box_sale__title {color: $color-brand;font-size: 20px;font-family: $font-title;text-transform: uppercase;font-weight: bold;margin: 0 20px 0 0;
+  i {font-size: 20px;margin: 0 10px 0 0}
+}
+.box_sale__countdown {background: $color-brand;color: white;font-size: 12px;padding: 7px 15px}
+.box_sale__control {margin-left: auto;display: flex}
+.box_sale__arr {text-align: right;display: flex;align-items: center;
+  a {display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border: solid 1px $color-border;border-radius: 50%;font-size: 11px;
+    + a {margin: 0 0 0 5px}
+  }
+}
+.box_sale__btn {;margin: 0 0 0 10px;}
+.box_sale__body {background: $color-brand;padding: 25px}

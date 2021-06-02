@@ -1,1 +1,21 @@
 #header {background: white}
+#logo {display: inline-block;font-size: 0}
+.header_row {display: flex;align-items: center;padding: 10px 0;}
+.header_col__left {padding-right: 25px;margin: 0 100px 0 0;flex-shrink: 0}
+.header_col__center {padding: 0 25px}
+.header_col__right {padding-left: 25px;flex-grow: 1;flex-shrink: 0;display: flex;justify-content: space-between;align-items: center  }
+
+.header_search {}
+.header_search__form {width: 580px;display: flex;align-items: center}
+.header_search__input {flex-grow: 1;border: solid 2px $color-border;border-right: none;padding: 7px 10px;border-radius: 3px 0 0 3px}
+.header_search__btn {background: $color-brand;color: white;border: none;padding: 8px 15px;border-radius: 0 3px 3px 0;font-size: 16px;
+  &:hover {background: darken($color-brand,5%)}
+}
+
+.header_user {margin: 0 15px 0 0;
+  a {display: flex;padding: 5px;align-items: center;justify-content: center;border: solid 1px $color-border;border-radius: 2px;width: 40px;height: 40px;font-size: 18px;}
+}
+.header_cart {border: solid 1px $color-border;border-radius: 3px;display: flex;flex-grow: 1;align-items: center}
+.header_cart__icon {height: 40px;display: flex;align-items: center;justify-content: center;padding: 0 12px;position: relative;border-right: solid 1px $color-border;flex-shrink: 0}
+.header_cart__items {background: $color-brand;position: absolute;top: -10px;right: -10px;color: white;border-radius:10px;padding: 3px 5px;min-width: 20px;font-size: 10px;text-align: center}
+.header_cart__price {flex-grow: 1;padding: 0 10px}

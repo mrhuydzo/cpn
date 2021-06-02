@@ -31,9 +31,22 @@ function slideCustomer () {
     });
 }
 
+
+function slideBoxSale () {
+    var swiper = new Swiper(".box_sale .swiper-container", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".box_sale .box_sale__arr .next",
+            prevEl: ".box_sale .box_sale__arr .prev",
+        },
+    });
+}
+
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
     backToTop();
     slideNews ();
     slideCustomer ();
+    slideBoxSale ();
 })
