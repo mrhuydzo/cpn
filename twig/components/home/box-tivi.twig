@@ -7,6 +7,14 @@
     '../../images/brands/skyworth',
     '../../images/brands/asanzo',
 ] %}
+
+{% set arrProduct = [
+    '../../images/tivi/tivi-1',
+    '../../images/tivi/tivi-2',
+    '../../images/tivi/tivi-4',
+    '../../images/tivi/tivi-3',
+    '../../images/tivi/tivi-5',
+] %}
 <div class="box_container box_container__refrigerator">
     <div class="box_header">
         <h4 class="box_title">
@@ -25,6 +33,57 @@
                 <img src="{{ i }}.png" alt="" />
             </a>
             {% endfor %}
+        </div>
+        <div class="box_product">
+            <div class="product_lst">
+                <div class="row">
+                    {% for item in 0..4 %}
+                        <div class="col-five">
+                            <div class="product_item">
+                                <span class="product_sale">-{{ random(99) }}%</span>
+                                <a href="#" title="" class="product_item__thumb">
+                                    <img src="{{ random(arrProduct) }}.png" alt=""/>
+                                </a>
+                                <h2 class="product_name">
+                                    <a href="#" title="">Sony 48-inch OLED 4K A9S - Android 16GB; X1 Ultimate; </a>
+                                </h2>
+                                <div class="product_tag">
+                                    <a href="#" title="">4K</a>
+                                    <a href="#" title="">SMART</a>
+                                    <a href="#" title="">50 inch</a>
+                                </div>
+                                <div class="product_price">
+                                    <div class="product_price__current">25.229.000đ</div>
+                                    <div class="product_price__old">1.225.229đ</div>
+                                    {% if item == 3 %}
+                                        <div class="product_status non_stock">
+                                            <strong class="product_status__check"></strong>
+                                            <span>Tạm hết</span>
+                                        </div>
+                                    {% else %}
+                                        <div class="product_status">
+                                            <strong class="product_status__check"></strong>
+                                            <span>Còn hàng</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="product_gift">
+                                    Quà trị giá: <strong>300.000đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="box_banner">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <a href="#" title="">
+                        <img src="https://via.placeholder.com/1600x240.png" alt=""/>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
