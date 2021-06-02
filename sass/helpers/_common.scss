@@ -34,3 +34,16 @@ hr {border-top: solid 1px $color-border;border-bottom: none;margin: 10px 0;}
 }
 
 .fix_top {position: sticky;top: 0;z-index: 1}
+
+
+
+.col-five{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}

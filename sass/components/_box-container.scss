@@ -8,7 +8,7 @@
 
 .box_tab {margin-left: auto}
 .box_tab__item {display: inline-block;padding: 3px 15px;border: solid 1px $color-border;border-radius: 3px;text-transform: capitalize;
-	+ .box_tab__item {margin-left: 10px;}
+	+ .box_tab__item {margin-left: 5px;}
 	&.active {border-color: $color-brand}
 }
 
@@ -16,3 +16,4 @@
 .box_brands__item {flex-grow: 1;padding: 0 12px;
 	+ .box_brands__item {}
 }
+.box_product {}

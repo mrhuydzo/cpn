@@ -1,0 +1,82 @@
+{% set arr = [
+    '../../images/brands/macbook',
+    '../../images/brands/dell',
+    '../../images/brands/hp',
+    '../../images/brands/avita',
+    '../../images/brands/lenovo',
+    '../../images/brands/acer',
+    '../../images/brands/asus',
+    '../../images/brands/msi',
+] %}
+
+{% set arrProduct = [
+    '../../images/laptop/laptop-1',
+    '../../images/laptop/laptop-2',
+    '../../images/laptop/laptop-3',
+    '../../images/laptop/laptop-4',
+] %}
+
+<div class="box_container box_container__air-conditioner">
+    <div class="box_header">
+        <h4 class="box_title">
+            <i class="far fa-laptop"></i> Laptop
+        </h4>
+        <div class="box_tab">
+            <a href="#" class="box_tab__item active">Sinh viên</a>
+            <a href="#" class="box_tab__item">Văn phòng</a>
+            <a href="#" class="box_tab__item">Doanh nhân</a>
+            <a href="#" class="box_tab__item">Game thủ</a>
+            <a href="#" class="box_tab__item">Đồ họa & kỹ thuật</a>
+        </div>
+    </div>
+    <div class="box_body">
+        <div class="box_brands">
+            {% for i in arr %}
+                <a href="#" class="box_brands__item">
+                    <img src="{{ i }}.png" alt="" />
+                </a>
+            {% endfor %}
+        </div>
+        <div class="box_product">
+            <div class="product_lst">
+                <div class="row">
+                    {% for item in 0..4 %}
+                        <div class="col-five">
+                            <div class="product_item">
+                                <span class="product_sale">-{{ random(99) }}%</span>
+                                <a href="#" title="" class="product_item__thumb">
+                                    <img src="{{ random(arrProduct) }}.png" alt=""/>
+                                </a>
+                                <h2 class="product_name">
+                                    <a href="#" title="">HP 250 G8 389X8PA Intel Core i3 (Ma SP)</a>
+                                </h2>
+                                <div class="product_tag">
+                                    <a href="#" title="">RAM 4GB</a>
+                                    <a href="#" title="">SSD 256GB</a>
+                                </div>
+                                <div class="product_price">
+                                    <div class="product_price__current">25.229.000đ</div>
+                                    <div class="product_price__old">1.225.229đ</div>
+                                    {% if item == 3 %}
+                                        <div class="product_status non_stock">
+                                            <strong class="product_status__check"></strong>
+                                            <span>Tạm hết</span>
+                                        </div>
+                                    {% else %}
+                                        <div class="product_status">
+                                            <strong class="product_status__check"></strong>
+                                            <span>Còn hàng</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="product_gift">
+                                    Quà trị giá: <strong>300.000đ</strong>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
