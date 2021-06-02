@@ -1,4 +1,6 @@
-.block_customer {}
+.block_customer {
+	.swiper-pagination-bullet-active {background: $color-brand}
+}
 .customer_lst {}
 .customer_item {margin: 1px}
 .customer_item__inner {border: solid 1px $color-border;padding: 15px 25px;}

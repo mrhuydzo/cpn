@@ -8,6 +8,7 @@
 .box_sale__arr {text-align: right;display: flex;align-items: center;
   a {display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border: solid 1px $color-border;border-radius: 50%;font-size: 11px;
     + a {margin: 0 0 0 5px}
+    &:hover {background: $color-brand;color: white;border-color: $color-brand}
   }
 }
 .box_sale__btn {;margin: 0 0 0 10px;}

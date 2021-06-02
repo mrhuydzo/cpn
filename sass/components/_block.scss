@@ -3,6 +3,7 @@
 .block_header__control {text-align: right;display: flex;align-items: center;
 	a {display: flex;align-items: center;justify-content: center;width: 25px;height: 25px;border: solid 1px $color-border;border-radius: 50%;font-size: 11px;
 		+ a {margin: 0 0 0 5px}
+		&:hover {background: $color-brand;color: white;border-color: $color-brand}
 	}
 }
 .block_title {font-family: $font-title;font-size: $font-size-m;color: $color-text;display: inline-block;position: relative;padding: 0 0 15px;margin: 0;text-transform: uppercase;
