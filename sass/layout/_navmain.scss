@@ -1,8 +1,16 @@
-#nav_main {background: url('../images/bg_menu.jpg') repeat-x 0 0}
+#nav_main {background: url('../images/bg_menu.jpg') repeat-x 0 0;position: relative}
 .nav_container {display: flex;align-items: center}
 .nav_lst {flex-grow: 1;font-family: $font-title;}
 .nav_item {display: inline-block;text-transform: uppercase;font-weight: bold;padding: 7px 25px;
 	a {color: $color-text-secondary;
 		&:hover {color: $color-brand}
 	}
+}
+
+.top_sale {background: $color-brand;color: white;display: flex;align-items: center;border-radius: 50px 0 0 50px;padding: 5px;font-family: $font-title;width: 270px;
+	position: absolute;right: 0;top: -15px;line-height: 18px;
+	span {background: white;color: $color-text;font-size: 16px;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;margin: 0 15px 0 0;border-radius: 50%;
+		font-weight: bold;text-align: center;
+	}
+	strong {}
 }

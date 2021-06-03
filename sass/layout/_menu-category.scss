@@ -7,15 +7,18 @@
 }
 .menu_category__body {background: white;position: absolute;width: 100%;border: solid 2px $color-brand;border-top: none;border-radius: 0 0 10px 10px}
 .menu_category__lst {padding: 10px 0}
-.menu_category__item {padding: 3px 15px;border-bottom: solid 1px $color-border;
+.menu_category__item {border-bottom: solid 1px $color-border;
 	&:last-child {border-bottom: none}
 	&:hover {
 		.menu_mega {display: block}
 	}
 }
-.menu_category__slug {display: flex;align-items: center;
+.menu_category__slug {display: flex;align-items: center;padding: 3px 15px;
 	.icon {margin: 0 10px 0 0;min-width: 20px;text-align: center}
 	.arr {margin-left: auto;color: #999}
+	&:hover {
+		i {color: $color-brand}
+	}
 }
 
 .menu_mega {background: white;position: absolute;left: 268px;top: 0;width: 918px;display: none;z-index: 4;border: solid 1px $color-border;}
