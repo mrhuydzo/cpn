@@ -1,0 +1,30 @@
+<div class="home_banner">
+    <div class="home_banner__grid">
+        <div class="home_banner__slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for i in 0..2 %}
+                        <div class="swiper-slide">
+                            <div class="home_banner__slide_item">
+                                <img src="http://placehold.jp/600x300.png" alt=""/>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-arr swiper-button-next">
+                    <i class="far fa-chevron-right"></i>
+                </div>
+                <div class="swiper-button-arr swiper-button-prev">
+                    <i class="far fa-chevron-left"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#" title="" class="home_banner__static_item">
+            <img src="http://placehold.jp/260x170.png" alt=""/>
+        </a>
+        <a href="#" title="" class="home_banner__static_item">
+            <img src="http://placehold.jp/260x170.png" alt=""/>
+        </a>
+    </div>
+</div>

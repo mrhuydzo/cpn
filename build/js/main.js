@@ -32,6 +32,22 @@ function slideCustomer () {
 }
 
 
+function slideHomeBanner () {
+    var swiper = new Swiper(".home_banner__slide .swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".home_banner__slide .swiper-button-next",
+            prevEl: ".home_banner__slide .swiper-button-prev",
+        },
+        pagination: {
+            el: ".home_banner__slide .swiper-pagination",
+            clickable: true,
+        },
+    });
+}
+
+
 function slideBoxSale () {
     var swiper = new Swiper(".box_sale .swiper-container", {
         slidesPerView: 5,
@@ -49,4 +65,5 @@ $(document).ready(function () {
     slideNews ();
     slideCustomer ();
     slideBoxSale ();
+    slideHomeBanner();
 })
