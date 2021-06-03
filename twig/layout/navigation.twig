@@ -1,0 +1,21 @@
+{% set arr = [
+    'Giới thiệu CPN',
+    'Thẻ thành viên',
+    'Tư vấn chọn mua',
+    'Khuyến mại',
+    'Liên hệ',
+] %}
+<nav id="nav_main">
+    <div class="container">
+        <div class="nav_container">
+            {% include 'menu-category.twig' %}
+            <div class="nav_lst">
+                {% for i in arr %}
+                    <div class="nav_item">
+                        <a href="#" title="{{ i }}">{{ i }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>

@@ -35,8 +35,10 @@
 // Layout related stylesheets
 @import "layout/_footer";
 @import "layout/_header";
-//@import "layout/_sidebar";
+@import "layout/_logo";
 @import "layout/_topbar";
+@import "layout/_navmain";
+@import "layout/_menu-category";
 @import "layout/_page-main";
 
 
