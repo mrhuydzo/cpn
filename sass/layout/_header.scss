@@ -1,7 +1,7 @@
 #header {background: white}
 
 .header_row {display: flex;align-items: center;padding: 10px 0;}
-.header_col__left {padding-right: 25px;margin: 0 100px 0 0;flex-shrink: 0}
+.header_col__left {padding-right: 25px;flex-basis: 270px;text-align: center;flex-shrink: 0}
 .header_col__center {padding: 0 25px}
 .header_col__right {padding-left: 25px;flex-grow: 1;flex-shrink: 0;display: flex;justify-content: space-between;align-items: center  }
 

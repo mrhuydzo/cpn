@@ -10,6 +10,9 @@
         <div class="nav_container">
             {% include 'menu-category.twig' %}
             <div class="nav_lst">
+{#                <div class="nav_item">#}
+{#                    <a class="active" href="#" title="Trang chủ">Trang chủ</a>#}
+{#                </div>#}
                 {% for i in arr %}
                     <div class="nav_item">
                         <a href="#" title="{{ i }}">{{ i }}</a>
