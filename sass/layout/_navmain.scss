@@ -2,5 +2,7 @@
 .nav_container {display: flex;align-items: center}
 .nav_lst {flex-grow: 1;font-family: $font-title;}
 .nav_item {display: inline-block;text-transform: uppercase;font-weight: bold;padding: 7px 25px;
-	a {color: $color-text-secondary;}
+	a {color: $color-text-secondary;
+		&:hover {color: $color-brand}
+	}
 }
