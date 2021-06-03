@@ -1,5 +1,16 @@
 {% set arr = [
-    {name: 'Laptop', icon: ''},
+    {name: 'Laptop', icon: 'laptop'},
+    {name: 'Máy tính bàn - PC', icon: 'computer-speaker'},
+    {name: 'Thiết bị văn phòng', icon: 'print'},
+    {name: 'Linh kiện máy tính', icon: 'server'},
+    {name: 'Điện thoại', icon: 'mobile-alt'},
+    {name: 'Tivi - Loa dàn - Karaoke', icon: 'tv-retro'},
+    {name: 'Tủ lạnh - Tủ đông', icon: 'refrigerator'},
+    {name: 'Điều hòa', icon: 'air-conditioner'},
+    {name: 'Máy giặt - Máy sấy', icon: 'washer'},
+    {name: 'Lọc nước - Máy nước nóng', icon: 'water-lower'},
+    {name: 'Điện gia dụng', icon: 'oven'},
+    {name: 'Quạt điện các loại', icon: 'fan-table'},
 ] %}
 
 {% set arrMenuMega = [
@@ -9,25 +20,31 @@
     'Theo Chip (CPU)',
     'Laptop bán chạy',
     'Linh kiện - Phụ kiện',
-
 ] %}
-<div class="menu_category">
+<div class="menu_category fixed">
     <div class="menu_category__header">
-        Danh mục sản phẩm
+        <strong><i class="fas fa-list"></i> Danh mục</strong>
+        <span>Tất cả nhóm hàng</span>
     </div>
     <div class="menu_category__body">
         <div class="menu_category__lst">
             {% for i in arr %}
             <div class="menu_category__item">
                 <a href="#" class="menu_category__slug" title="{{ i.name }}">
-                    <i class="far fa-shop"></i> {{ i.name }}
+                    <i class="far fa-{{ i.icon }} icon"></i> {{ i.name }} <i class="far fa-chevron-right arr"></i>
                 </a>
                 <div class="menu_mega">
                     <div class="menu_mega__row">
                         {% for item in arrMenuMega %}
                         <div class="menu_mega__col">
                             <div class="menu_mega__header">{{ item }}</div>
-                            <div class="menu_mega__lst"></div>
+                            <div class="menu_mega__lst">
+                                {% for z in 0..10 %}
+                                <a href="#" title="{{ i.name }}">
+                                    Laptop gaming
+                                </a>
+                                {% endfor %}
+                            </div>
                         </div>
                         {% endfor %}
                     </div>
