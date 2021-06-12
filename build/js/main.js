@@ -59,6 +59,15 @@ function slideBoxSale () {
     });
 }
 
+function toggleMenuCategory () {
+    let isHome = $('#page_home');
+    if (isHome.length === 0) {
+        $('.menu_category__header').click(function () {
+            $('.menu_category__body').toggleClass('open')
+        })
+    }
+}
+
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
     backToTop();
@@ -66,4 +75,5 @@ $(document).ready(function () {
     slideCustomer ();
     slideBoxSale ();
     slideHomeBanner();
+    toggleMenuCategory();
 })

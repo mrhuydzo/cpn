@@ -1,0 +1,94 @@
+{% extends "../layout/layout.twig" %}
+{% block pageTitle %} Siêu thị điện máy CPN Việt Nam {% endblock %}
+{% block page %}
+    <div id="page_post" class="page_main">
+        {% include '../layout/topbar.twig' %}
+        {% include '../layout/header.twig' %}
+        {% include '../layout/navigation.twig' %}
+        <div class="page_body">
+            <div class="container">
+                {% include './../components/home/service-box.twig' %}
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-8">
+                            {% include './../layout/breadcrumb.twig' %}
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="color_brand">
+                                <img src="images/label-hot.png" alt=""/> Mua trả góp 0%, đơn giản có ngay laptop
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="page_body__2col">
+                    <div class="page_content">
+                        <div class="box_container">
+                            <div class="box_header">
+                                <h4 class="box_title">
+                                    <i class="far fa-megaphone"></i> Tin tức - Sự kiện
+                                </h4>
+                            </div>
+                            <div class="box_body">
+                                <div class="post_lst">
+                                    {% for i in 0..4 %}
+                                    <div class="post_item">
+                                        <a href="#" title="" class="post_thumb">
+                                            <img src="images/post/news-1.png" alt="" />
+                                            <span class="post_time">
+                                                <strong class="post_time__day">19</strong>
+                                                <span class="post_time__month">Jun</span>
+                                            </span>
+                                        </a>
+                                        <div class="post_content">
+                                            <h3 class="post_title">
+                                                <a href="#" title="">Mừng sinh nhật CPN 20 năm</a>
+                                            </h3>
+                                            <div class="post_meta">
+                                                <span class="post_arthur">Huynq</span> &nbsp; - &nbsp; <span class="post_commnet"><i class="fas fa-comment"></i> 0 Comments</span>
+                                            </div>
+                                            <p class="post_summary">
+                                                Công ty Cổ phần vận tải và Thương mại CPN Việt Nam với phương châm “ Sự tồn tại và phát triển của CPN là do khách hàng quyết định” trải qua 18 năm hình thành và phát triển.
+                                            </p>
+                                            <div class="post_readmore">
+                                                <a href="#">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page_sidebar">
+                        {% for i in 0..2 %}
+                        <div class="sidebar_ads">
+                            <img src="images/banner-sidebar/banner-sidebar-{{ i + 1 }}.png" alt="" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_bottom">
+            <div class="back_top_bar">
+                <i class="fal fa-arrow-up"></i><strong>BACK TO TOP</strong><i class="fal fa-arrow-up"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        {% include '../components/home/block-news.twig' %}
+                    </div>
+                    <div class="col-4">
+                        {% include '../components/home/block-customer.twig' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+{% endblock %}

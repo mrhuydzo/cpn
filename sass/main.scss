@@ -40,10 +40,13 @@
 @import "layout/_navmain";
 @import "layout/_menu-category";
 @import "layout/_page-main";
+@import "layout/_breadcrumb";
+@import "layout/_sidebar";
 
 
 // Page-specific stylesheets
 @import "page/_page-home";
+@import "page/_page-post";
 
 
 // Vendors and external stylesheets

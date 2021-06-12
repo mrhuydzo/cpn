@@ -1,4 +1,4 @@
-.home_banner {display: flex;justify-content: flex-end;margin: 0 0 20px;padding: 20px 0 0}
+.home_banner {display: flex;justify-content: flex-end;margin: 0 0 20px;}
 .home_banner__grid {display: grid;grid-template-columns: 1fr 1fr 230px;grid-template-rows: 160px 160px;grid-gap: 15px;width: 910px;}
 .home_banner__slide {grid-column: span 2;grid-row: span 2;height: 100%;
 	.swiper-container {height: 100%}

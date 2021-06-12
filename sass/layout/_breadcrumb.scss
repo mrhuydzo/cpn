@@ -1,0 +1,6 @@
+.breadbrumb {display: flex;align-items: center}
+.breadbrumb_item {display: inline-block;margin: 0 15px 0 0;
+  a {margin: 0 15px 0 0}
+  span {display: inline-block;}
+  &.current {color: $color-brand}
+}

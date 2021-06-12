@@ -1,11 +1,13 @@
-.menu_category {position: relative;width: 270px;flex-shrink: 0}
-.menu_category__header {background: $color-brand;color: white;padding: 7px 15px;border-radius: 10px 10px 0 0;display: flex;justify-content: space-between;align-items: center;
+.menu_category {position: relative;width: 270px;flex-shrink: 0;}
+.menu_category__header {background: $color-brand;color: white;padding: 7px 15px;border-radius: 10px 10px 0 0;display: flex;justify-content: space-between;align-items: center;cursor: pointer;
 	strong {text-transform: uppercase;font-family: $font-title;
 		i {vertical-align: middle;margin: 0 8px 0 0}
 	}
 	span {font-size: 12px}
 }
-.menu_category__body {background: white;position: absolute;width: 100%;border: solid 2px $color-brand;border-top: none;border-radius: 0 0 10px 10px}
+.menu_category__body {background: white;position: absolute;width: 100%;border: solid 2px $color-brand;border-top: none;border-radius: 0 0 10px 10px;display: none;
+	&.open {display: block}
+}
 .menu_category__lst {padding: 10px 0}
 .menu_category__item {border-bottom: solid 1px $color-border;
 	&:last-child {border-bottom: none}

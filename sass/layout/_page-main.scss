@@ -1,2 +1,5 @@
 .page_main {background: #eee}
-.page_body {background: url('../images/bg_top_content.jpg') repeat-x 0 0;}
+.page_body {background: url('../images/bg_top_content.jpg') repeat-x 0 0;min-height: 600px;padding: 24px 0 0}
+.page_body__2col {display: flex;}
+.page_sidebar {width: 300px;flex-shrink: 0;padding: 42px 0 0}
+.page_content {flex-grow: 1;margin: 0 25px 0 0}

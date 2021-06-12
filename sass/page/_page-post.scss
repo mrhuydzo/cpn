@@ -1,0 +1,25 @@
+#page_post {}
+
+.post_lst {padding: 20px}
+.post_item {display: flex;
+  + .post_item {margin-top: 30px}
+}
+.post_thumb {flex-shrink: 0;width: 370px;margin: 0 20px 0 0;
+  @include aspect-ratio(370,204);
+}
+.post_time {background: $color-brand;position: absolute;z-index: 1;top: 10px;left: 10px;color: white;display: flex;flex-direction: column;justify-content: center;align-items: center;width: 60px;height: 60px}
+.post_time__day {}
+.post_time__month {}
+.post_content {flex-grow: 1}
+.post_title {font-size: 18px;color: $color-text;margin: 0 0 5px}
+.post_meta {font-size: 11px;color: $light;margin: 0 0 15px}
+.post_arthur {}
+.post_comment {
+
+}
+.post_summary {}
+.post_readmore {text-transform: uppercase;font-weight: $font-weight-bold;
+  a {color: $color-brand-second;font-family: $font-title;text-decoration: underline;
+    &:hover {color: $color-brand;text-decoration: none;}
+  }
+}
