@@ -1,0 +1,5 @@
+.pagination {display: flex;justify-content: center;align-items: center;padding: 20px}
+.pagination-item {display: flex;align-items: center;justify-content: center;border: solid 1px $color-border;min-width: 40px;min-height: 40px;margin: 0 2px}
+.pagination-item--prev ,
+.pagination-item--next {padding: 0 10px;font-size: 11px}
+.pagination-item--current {background: $color-brand;color: white;border-color: $color-brand}
