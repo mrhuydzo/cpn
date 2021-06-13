@@ -1,0 +1,13 @@
+#page_member {}
+.gift_product {}
+.gift_product__header {font-size: 18px;font-weight: bold;padding: 5px 0 10px;border-bottom: solid 2px $color-brand}
+.gift_product__body {background: white;padding: 20px}
+.gift_product__list {}
+.gift_product__item {border: solid 1px $color-border;padding: 20px 30px}
+.gift_product__thumb {margin: 0 0 5px;
+  @include aspect-ratio(1,1);
+}
+.gift_proruct__info {}
+.gift_product__point {color: $color-brand;font-weight: bold;font-family: $font-title;margin: 0 0 5px;font-size: 18px}
+.gift_product__code {font-weight: bold;font-family: $font-title;font-size: 18px;margin: 0 0 5px;}
+.gift_product__summary {color: $color-text-secondary;margin: 0;font-size: 12px}

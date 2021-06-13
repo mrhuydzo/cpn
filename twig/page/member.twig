@@ -1,0 +1,80 @@
+{% extends "../layout/layout.twig" %}
+{% block pageTitle %} Siêu thị điện máy CPN Việt Nam {% endblock %}
+{% block page %}
+    <div id="page_member" class="page_main">
+        {% include '../layout/topbar.twig' %}
+        {% include '../layout/header.twig' %}
+        {% include '../layout/navigation.twig' %}
+        <div class="page_body">
+            <div class="container">
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-8">
+                            {% include './../layout/breadcrumb.twig' %}
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="color_brand">
+                                <img src="images/label-hot.png" alt=""/> Mua trả góp 0%, đơn giản có ngay laptop
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page_body__2col">
+                    <div class="page_content">
+                        <div class="gift_product">
+                            <div class="gift_product__header">Điểm thành viên đổi quà</div>
+                            <div class="gift_product__body">
+                                <div class="gift_product__list">
+                                    <div class="row">
+                                        {% for i in 0..8 %}
+                                            <div class="col-4 mb-2">
+                                                <div class="gift_product__item">
+                                                    <a href="#" class="gift_product__thumb">
+                                                        <img src="https://via.placeholder.com/300x300.png" alt=""/>
+                                                    </a>
+                                                    <div class="gift_proruct__info">
+                                                        <div class="gift_product__point">{{ random(9999) }} điểm</div>
+                                                        <div class="gift_product__code">EUM0900SA</div>
+                                                        <p class="gift_product__summary">Tủ lạnh Electrolux 46L EUM0900SA (1 Cánh, làm lạnh trực tiếp, Cửa tủ: Thép không rỉ...)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                                {% include '../common/pagination.twig' %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page_sidebar">
+                        {% include './../components/sidebar-login.twig' %}
+                        {% for i in 0..2 %}
+                            <div class="sidebar_ads">
+                                <img src="images/banner-sidebar/banner-sidebar-{{ i + 1 }}.png" alt="" />
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_bottom">
+            <div class="back_top_bar">
+                <i class="fal fa-arrow-up"></i><strong>BACK TO TOP</strong><i class="fal fa-arrow-up"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        {% include '../components/home/block-news.twig' %}
+                    </div>
+                    <div class="col-4">
+                        {% include '../components/home/block-customer.twig' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+{% endblock %}
