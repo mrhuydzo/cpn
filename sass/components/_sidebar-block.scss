@@ -5,6 +5,10 @@
 .sidebar_block__title {font-size: 16px;margin: 0;text-transform: uppercase;color: $color-brand;}
 .sidebar_block__body {padding: 20px}
 
+//Ads
+.sidebar_ads {margin-bottom: 15px}
+
+//Links
 .sidebar_block__links {}
 .post_links__lst {font-size: 13px;font-weight: bold}
 .post_links__item {border-bottom: solid 1px $color-border;
@@ -16,3 +20,19 @@
     }
   }
 }
+
+//
+
+.sidebar_post {}
+.sidebar_post__item {margin: 0 0 15px;padding: 0 0 15px;border-bottom: dashed 1px $color-border}
+.sidebar_post__thumb {margin: 0 0 5px;
+  @include aspect-ratio(2,1)
+}
+.sidebar_post__info {}
+.sidebar_post__title {font-size: 13px;
+  a {color: $color-text-secondary}
+}
+.sidebar_post__summary {font-size: 13px;color: $color-text-secondary;margin: 0 0 5px}
+.sidebar_post__bottom {display: flex;align-items: center;justify-content: space-between}
+.sidebar_post__time {font-size: 12px;color: $color-text-secondary}
+.sidebar_post__more {text-transform: uppercase;font-weight: bold;color: $color-text-secondary;font-size: 12px;font-family: $font-title}

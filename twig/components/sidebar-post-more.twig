@@ -1,0 +1,28 @@
+<div class="sidebar_block">
+    <div class="sidebar_block__header">
+        <h4 class="sidebar_block__title">Xem thêm tin</h4>
+    </div>
+    <div class="sidebar_block__body">
+        <div class="sidebar_post">
+            {% for i in 0..2 %}
+                <div class="sidebar_post__item">
+                    <a href="#" title="" class="sidebar_post__thumb">
+                        <img src="http://placehold.jp/400x200.png" alt=""/>
+                    </a>
+                    <div class="sidebar_post__info">
+                        <h4 class="sidebar_post__title">
+                            <a href="#" title="">Khuyến mại A.O.Smith 5/2021: A. O. SMITH</a>
+                        </h4>
+                        <p class="sidebar_post__summary">
+                            Để hỗ trợ cho Người Tiêu Dùng trong mùa dịch, Siêu thị điện máy CPN...
+                        </p>
+                        <div class="sidebar_post__bottom">
+                            <time class="sidebar_post__time"><i class="far fa-calendar-alt mr-2"></i> 13 Jun 2021</time>
+                            <a href="#" class="sidebar_post__more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

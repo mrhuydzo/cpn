@@ -23,3 +23,13 @@
     &:hover {color: $color-brand;text-decoration: none;}
   }
 }
+
+.post_detail {}
+.post_detail__article {}
+.post_detail__bottom {color: $color-text-secondary;font-size: 12px;padding: 10px 0;border-bottom: dashed 1px $color-border;border-top: dashed 1px $color-border;
+  a {color: $color-text-secondary;display: inline-block}
+}
+.post_detail__time {}
+.post_detail__arthur {}
+.post_detail__share {}
+.post_detail__print {}

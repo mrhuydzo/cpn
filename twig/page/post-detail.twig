@@ -1,0 +1,112 @@
+{% extends "../layout/layout.twig" %}
+{% block pageTitle %} Chi tiết bài viết | Siêu thị điện máy CPN Việt Nam {% endblock %}
+{% block page %}
+    <div id="page_post" class="page_main">
+        {% include '../layout/topbar.twig' %}
+        {% include '../layout/header.twig' %}
+        {% include '../layout/navigation.twig' %}
+        <div class="page_body">
+            <div class="container">
+                {% include './../components/home/service-box.twig' %}
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-8">
+                            {% include './../layout/breadcrumb.twig' %}
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="color_brand">
+                                <img src="images/label-hot.png" alt=""/> Mua trả góp 0%, đơn giản có ngay laptop
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page_body__2col">
+                    <div class="page_content">
+                        <div class="panel">
+                            <div class="panel_header">
+                                <h3 class="panel_title">Đón sinh nhật cùng CPN - Hàng ngàn quà tặng</h3>
+                            </div>
+                            <div class="panel_body">
+                                <div class="post_detail">
+                                    <article class="post_detail__article">
+                                        <img src="images/post-detail.png" alt="" />
+                                        <p>
+                                            Thay vì trở về Việt Nam và thực hiện cách ly cùng đồng đội, cặp trung vệ của CLB Viettel sẽ bay tới Bangkok.
+                                            Trong khi đó, CLB Viettel thi đấu AFC Champions League từ ngày 26/6 đến 11/7.
+                                        </p>
+                                        <p>
+                                            Tại vòng loại World Cup 2022 lần này, HLV Park Hang-seo triệu tập 5 cầu thủ từ nhà đương kim vô địch V.League gồm Quế Ngọc Hải, Bùi Tiến Dũng, Nguyễn Hoàng Đức, Nguyễn Trọng Hoàng và Nguyễn Thanh Bình.
+                                        </p>
+                                        <p>
+                                            Theo kế hoạch, đội tuyển Việt Nam sẽ về nước sau trận gặp UAE bằng chuyên cơ riêng rồi thực hiện cách ly theo dõi y tế 21 ngày.
+                                        </p>
+                                        <p>
+                                            Điều này đồng nghĩa nếu nhóm cầu thủ của CLB Viettel di chuyển cùng đội tuyển, họ sẽ để lỡ giải đấu hàng đầu châu Á cấp CLB. Vì vậy, phương án được đưa ra là 5 cầu thủ nói trên sẽ bay tới Bangkok thay vì về Việt Nam.
+
+                                            Đại diện CLB Viettel cho biết nhóm cầu thủ này sẽ có mặt tại Bangkok vào ngày 17/6. Ngày 21/6, CLB Viettel di chuyển từ Hà Nội. Do không có chuyến bay thẳng, HLV Trương Việt Hoàng và học trò phải quá cảnh tại Singapore. Tới ngày 22/6, đội bóng này mới đến Thái Lan. Trong thời gian chờ hội quân, Quế Ngọc Hải cùng đồng đội được bố trí lưu trú ở khách sạn Novotel (tiêu chuẩn 5 sao) tại Bangkok.
+
+
+                                        </p>
+                                        <p>
+                                            Theo kết quả bốc thăm AFC Champions League, CLB Viettel nằm ở bảng F cùng BG Pathum United (Thái Lan), Ulsan Hyundai (Hàn Quốc) và một đội vượt qua vòng loại. Tất cả trận đấu tại bảng này đều diễn ra ở Thái Lan. Thầy trò HLV Trương Việt Hoàng sẽ khởi đầu giải đấu bằng trận gặp CLB Ulsan Hyundai vào ngày 26/6.
+                                        </p>
+                                    </article>
+                                    <div class="post_detail__bottom">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <time class="post_detail__time mr-3">
+                                                    <i class="far fa-calendar-alt mr-1"></i> June 16 2021
+                                                </time>
+                                                <span class="post_detail__arthur">
+                                                    <i class="fas fa-user mr-1"></i> Huynq
+                                                </span>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <a href="#" class="post_detail__share mr-3">
+                                                    <i class="far fa-share-alt mr-1"></i> Share
+                                                </a>
+                                                <a href="#" class="post_detail__print">
+                                                    <i class="far fa-print mr-1"></i> Print
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page_sidebar">
+                        {% include './../components/sidebar-block-links.twig' %}
+                        {% include './../components/sidebar-post-more.twig' %}
+
+                        {% for i in 0..2 %}
+                        <div class="sidebar_ads">
+                            <img src="images/banner-sidebar/banner-sidebar-{{ i + 1 }}.png" alt="" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_bottom">
+            <div class="back_top_bar">
+                <i class="fal fa-arrow-up"></i><strong>BACK TO TOP</strong><i class="fal fa-arrow-up"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        {% include '../components/home/block-news.twig' %}
+                    </div>
+                    <div class="col-4">
+                        {% include '../components/home/block-customer.twig' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer.twig' %}
+    </div>
+{% endblock %}
