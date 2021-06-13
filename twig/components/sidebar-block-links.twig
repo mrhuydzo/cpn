@@ -1,0 +1,22 @@
+{% set arr = [
+    'Giới thiệu CPN',
+    'Thẻ thành viên & Các ưu đãi',
+    'Hệ thống các siêu thị CPN',
+    'Tin sự kiện',
+    'Tin tuyển dụng',
+    'Liên hệ CPN'
+] %}
+<div class="sidebar_block sidebar_block__links">
+    <div class="sidebar_block__header">
+        <h4 class="sidebar_block__title">Xem thêm</h4>
+    </div>
+    <div class="sidebar_block__body">
+        <div class="post_links__lst">
+            {% for i in arr %}
+            <div class="post_links__item">
+                <a href="#" title="{{ i }}">{{ i }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

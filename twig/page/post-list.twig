@@ -22,7 +22,6 @@
                 </div>
             </div>
             <div class="container">
-
                 <div class="page_body__2col">
                     <div class="page_content">
                         <div class="box_container">
@@ -66,6 +65,7 @@
                     </div>
 
                     <div class="page_sidebar">
+                        {% include './../components/sidebar-block-links.twig' %}
                         {% for i in 0..2 %}
                         <div class="sidebar_ads">
                             <img src="images/banner-sidebar/banner-sidebar-{{ i + 1 }}.png" alt="" />

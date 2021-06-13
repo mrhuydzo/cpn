@@ -1,0 +1,18 @@
+.sidebar_block {background: white;margin: 0 0 15px}
+.sidebar_block__header {padding: 10px 20px;position: relative;border-bottom: solid 1px $color-border;
+  &::before {content: '';background: $color-brand;display: block;height: 2px;width: 120px;position: absolute;bottom: 0;left: 0}
+}
+.sidebar_block__title {font-size: 16px;margin: 0;text-transform: uppercase;color: $color-brand;}
+.sidebar_block__body {padding: 20px}
+
+.sidebar_block__links {}
+.post_links__lst {font-size: 13px;font-weight: bold}
+.post_links__item {border-bottom: solid 1px $color-border;
+  a {color: $gray-light;position: relative;padding: 10px 0 10px 25px;display: block;
+    &::before {content: '';background: #cadae2;display: block;width: 15px;height: 15px;border-radius: 2px;position: absolute;left: 0;top: 12px}
+    &.active,
+    &:hover {color: $color-brand;
+      &::before {background: $color-brand}
+    }
+  }
+}
