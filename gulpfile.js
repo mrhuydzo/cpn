@@ -26,7 +26,7 @@ function compileTwig() {
     return gulp.src(files.twigPath) // run the Twig template parser on all .html files in the "twig" directory
         .pipe(twig())
         .pipe(gulp.dest(files.build)) // output the rendered HTML files to the "dist" directory
-        //.pipe(browserSync.stream());
+    //.pipe(browserSync.stream());
 }
 
 function compileSass() {
@@ -44,6 +44,7 @@ function startServe() {
         port: 3002
     });
     gulp.watch(files.sassPath, compileSass);
+    //gulp.watch(files.imagePath, minifyImage);
     gulp.watch('twig/**/*.twig', compileTwig);
     gulp.watch(files.htmlPath).on('change', browserSync.reload);
 }
@@ -51,11 +52,13 @@ function startServe() {
 function minifyImage() {
     return gulp.src(files.imagePath)
         .pipe(imagemin([
-            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.gifsicle({interlaced: true, progressive: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5, progressive: true}),
             imagemin.svgo({
                 plugins: [
                     {removeViewBox: true},
-                    {cleanupIDs: true}
+                    {cleanupIDs: false}
                 ]
             })
         ], {
@@ -63,6 +66,7 @@ function minifyImage() {
         }))
         .pipe(gulp.dest('build/images'));
 }
+
 /*
 function cleanDist() {
     return del(['dist/!*']);
@@ -92,11 +96,11 @@ function copyCss() {
 */
 
 exports.default = gulp.series(
-    gulp.parallel(compileSass,compileTwig,minifyImage),
+    gulp.parallel(compileSass, compileTwig, minifyImage),
     startServe
 );
 
 exports.build = gulp.series(
-    gulp.parallel(compileSass,compileTwig,minifyImage),
+    gulp.parallel(compileSass, compileTwig, minifyImage),
     //gulp.parallel(copyHtml, copyCss, minifyImage)
 );
