@@ -7,7 +7,7 @@ const sourcemaps = require('gulp-sourcemaps');
 //const cssnano = require('gulp-cssnano');
 //const rename = require('gulp-rename');
 //const del = require('del');
-//const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 //const replace = require('gulp-replace');
 
 browserSync.create();
@@ -18,7 +18,7 @@ const files = {
     htmlPath: 'html/*.html',
     sassPath: 'sass/**/*.scss',
     cssPath: 'css/*.css',
-    imagePath: 'images/*',
+    imagePath: 'images/**/*',
     twigPath: 'twig/page/*.twig'
 };
 
@@ -47,6 +47,22 @@ function startServe() {
     gulp.watch('twig/**/*.twig', compileTwig);
     gulp.watch(files.htmlPath).on('change', browserSync.reload);
 }
+
+function minifyImage() {
+    return gulp.src(files.imagePath)
+        .pipe(imagemin([
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: true}
+                ]
+            })
+        ], {
+            verbose: true
+        }))
+        .pipe(gulp.dest('build/images'));
+}
 /*
 function cleanDist() {
     return del(['dist/!*']);
@@ -59,19 +75,7 @@ function copyHtml() {
 }*/
 /*
 
-function minifyImage() {
-    return gulp.src(files.imagePath)
-        .pipe(imagemin([
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: true}
-                ]
-            })
-        ]))
-        .pipe(gulp.dest('dist/images'));
-}
+
 */
 /*
 
@@ -88,11 +92,11 @@ function copyCss() {
 */
 
 exports.default = gulp.series(
-    gulp.parallel(compileSass,compileTwig),
+    gulp.parallel(compileSass,compileTwig,minifyImage),
     startServe
 );
 
 exports.build = gulp.series(
-    gulp.parallel(compileSass,compileTwig),
+    gulp.parallel(compileSass,compileTwig,minifyImage),
     //gulp.parallel(copyHtml, copyCss, minifyImage)
 );
